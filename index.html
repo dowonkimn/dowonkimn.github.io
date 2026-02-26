@@ -42,176 +42,249 @@
               </td>
             </tr>
           </tbody></table>
+          <!-- Research Section Header -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
+            <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in robotics, computer vision, deep learning. Most of my research is about empowering embodied agents to understand and interact with the physical world, usually with Vision-Language-Action models and sim-to-real data pipelines.
+                  My work focuses on enabling robots to learn manipulation skills through vision-language-action models and scalable sim-to-real pipelines.
                 </p>
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
+          <!-- Research Items -->
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <!-- 1. ARNOLD Challenge (Highlight) -->
+            <tr onmouseout="arnold_stop()" onmouseover="arnold_start()" bgcolor="#ffffd0">
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='arnold_image'>
+                    <img src='images/arnoldAfter.gif' width=100%>
+                  </div>
+                  <img src='images/arnoldBefore.jpg' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function arnold_start() {
+                    document.getElementById('arnold_image').style.opacity = "1";
+                  }
+                  function arnold_stop() {
+                    document.getElementById('arnold_image').style.opacity = "0";
+                  }
+                  arnold_stop()
+                </script>
+              </td>
+              <td style="padding:16px;width:75%;vertical-align:middle">
+                <span class="papertitle">VLA Policy Learning on ARNOLD Benchmark</span>
+                <br>
+                <strong>Dowon Kim</strong>, Sangmin Lee, Sungyong Park, Heewon Kim
+                <br>
+                <em>CVPR 2025 Embodied AI Workshop</em> &nbsp <font color="red"><strong>(1st Place)</strong></font>
+                <br>
+                <a href="https://docs.google.com/viewer?url=https://github.com/dowonkimn/dowonkimn.github.io/blob/master/data/ArnoldCertification2025.pdf?raw=True">certificate</a>
+                /
+                <a href="https://www.joongang.co.kr/article/25351676">media</a>
+                <p>
+                  Fine-tuned VLA models for embodied manipulation, outperforming PerAct baseline through targeted data augmentation in Isaac Sim.
+                </p>
+              </td>
+            </tr>
+
+            <!-- 2. Sim-to-Real Pipeline -->
+            <tr onmouseout="simreal_stop()" onmouseover="simreal_start()">
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='simreal_image'>
+                    <img src='images/simrealAfter.gif' width=100%>
+                  </div>
+                  <img src='images/simrealBefore.jpg' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function simreal_start() {
+                    document.getElementById('simreal_image').style.opacity = "1";
+                  }
+                  function simreal_stop() {
+                    document.getElementById('simreal_image').style.opacity = "0";
+                  }
+                  simreal_stop()
+                </script>
+              </td>
+              <td style="padding:16px;width:75%;vertical-align:middle">
+                <span class="papertitle">Large-Scale Sim-to-Real Robotics Data Pipeline</span>
+                <br>
+                <em>LG AI Research</em>, 2026 - Present
+                <p>
+                  Building an end-to-end R2S2R pipeline using NVIDIA Isaac Sim for scalable data generation, synthetic augmentation, and deployment validation.
+                </p>
+              </td>
+            </tr>
+
+            <!-- 3. Multi-Viewpoint Paper (Highlight - First Author) -->
+            <tr onmouseout="multiview_stop()" onmouseover="multiview_start()" bgcolor="#ffffd0">
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='multiview_image'>
+                    <img src='images/multiviewAfter.jpg' width=100%>
+                  </div>
+                  <img src='images/multiviewBefore.jpg' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function multiview_start() {
+                    document.getElementById('multiview_image').style.opacity = "1";
+                  }
+                  function multiview_stop() {
+                    document.getElementById('multiview_image').style.opacity = "0";
+                  }
+                  multiview_stop()
+                </script>
+              </td>
+              <td style="padding:16px;width:75%;vertical-align:middle">
                 <a href="https://ksbe-jbe.org/_common/do.php?a=full&b=13&bidx=4152&aidx=45824">
-                  <span class="papertitle">Quantitative Analysis of Multi-Viewpoint Configuration Effects in Robotic Manipulation Policy Learning</span>
+                  <span class="papertitle">Multi-Viewpoint Configuration Effects in Robotic Manipulation Policy Learning</span>
                 </a>
                 <br>
                 <strong>Dowon Kim</strong>, Sangmin Lee, Sungyong Park, Heewon Kim
                 <br>
                 <em>Journal of Broadcast Engineering</em>, 2025
+                <br>
+                <a href="https://ksbe-jbe.org/_common/do.php?a=full&b=13&bidx=4152&aidx=45824">paper</a>
+                <p>
+                  Quantitative analysis of camera viewpoint configurations for robot manipulation policy learning.
+                </p>
               </td>
             </tr>
 
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
+            <!-- 4. VLA Failure Modes -->
+            <tr onmouseout="vlafail_stop()" onmouseover="vlafail_start()">
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='vlafail_image'>
+                    <img src='images/vlafailAfter.jpg' width=100%>
+                  </div>
+                  <img src='images/vlafailBefore.jpg' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function vlafail_start() {
+                    document.getElementById('vlafail_image').style.opacity = "1";
+                  }
+                  function vlafail_stop() {
+                    document.getElementById('vlafail_image').style.opacity = "0";
+                  }
+                  vlafail_stop()
+                </script>
+              </td>
+              <td style="padding:16px;width:75%;vertical-align:middle">
+                <span class="papertitle">Visual Guidance for Failure Modes in VLA Models</span>
+                <br>
+                <em>In Progress</em>, 2025 - Present
+                <p>
+                  Analyzing systematic failure modes of VLA models and proposing visual guidance to enhance reasoning across long-horizon manipulation tasks.
+                </p>
+              </td>
+            </tr>
+
+            <!-- 5. Humanoid System -->
+            <tr onmouseout="humanoid_stop()" onmouseover="humanoid_start()">
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='humanoid_image'>
+                    <img src='images/humanoidAfter.gif' width=100%>
+                  </div>
+                  <img src='images/humanoidBefore.jpg' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function humanoid_start() {
+                    document.getElementById('humanoid_image').style.opacity = "1";
+                  }
+                  function humanoid_stop() {
+                    document.getElementById('humanoid_image').style.opacity = "0";
+                  }
+                  humanoid_stop()
+                </script>
+              </td>
+              <td style="padding:16px;width:75%;vertical-align:middle">
+                <span class="papertitle">Humanoid Mobile Manipulation System</span>
+                <br>
+                <em>Reality Lab, Soongsil Univ</em>, 2025
+                <p>
+                  Full robotics lifecycle implementation: sim-to-real policy deployment, large-scale dataset generation, and systematic evaluation.
+                </p>
+              </td>
+            </tr>
+
+            <!-- 6. Skin Disease Paper -->
+            <tr onmouseout="skin_stop()" onmouseover="skin_start()">
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='skin_image'>
+                    <img src='images/skinAfter.jpg' width=100%>
+                  </div>
+                  <img src='images/skinBefore.jpg' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function skin_start() {
+                    document.getElementById('skin_image').style.opacity = "1";
+                  }
+                  function skin_stop() {
+                    document.getElementById('skin_image').style.opacity = "0";
+                  }
+                  skin_stop()
+                </script>
+              </td>
+              <td style="padding:16px;width:75%;vertical-align:middle">
                 <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12434422">
-                  <span class="papertitle">A Deep Learning-Based Web Application for Automatic Detection and Diagnosis of Skin Diseases</span>
+                  <span class="papertitle">Deep Learning-Based Automatic Detection and Diagnosis of Skin Diseases</span>
                 </a>
                 <br>
                 Sebin Lee, <strong>Dowon Kim</strong>, Geunchan Park, Dohun Kim, Iksu Kim
                 <br>
                 <em>Journal of The Korea Contents Association</em>, 2025
+                <br>
+                <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12434422">paper</a>
+                <p>
+                  Web application for real-time skin disease classification using deep learning.
+                </p>
               </td>
             </tr>
 
           </tbody></table>
 
-          <!-- Projects Section -->
+          <!-- Miscellanea Section -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Projects</h2>
+                <h2>Miscellanea</h2>
               </td>
             </tr>
           </tbody></table>
+
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
             <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <span class="papertitle">Large-Scale Sim-to-Real Robotics Data Pipeline</span>
+              <td align="center" style="padding:16px;width:25%;vertical-align:middle">
+                <h3>Awards</h3>
+              </td>
+              <td style="padding:16px;width:75%;vertical-align:middle">
+                <a href="https://docs.google.com/viewer?url=https://github.com/dowonkimn/dowonkimn.github.io/blob/master/data/ArnoldCertification2025.pdf?raw=True">1st Place, ARNOLD Challenge</a> - CVPR 2025 Embodied AI Workshop
                 <br>
-                <em>LG AI Research</em>, Jan 2026 - Present
+                <a href="https://docs.google.com/viewer?url=https://github.com/dowonkimn/dowonkimn.github.io/blob/master/data/GrandPrize.pdf?raw=True">Grand Prize</a> - Gyeonggi Youth Gap Year Program, 2025
                 <br>
-                Co-designing and building an end-to-end R2S2R pipeline using NVIDIA Isaac Sim. Developing the full data loop from real-world collection to synthetic augmentation and deployment validation, focusing on scalable architecture and sim-to-real robustness.
+                <a href="https://docs.google.com/viewer?url=https://github.com/dowonkimn/dowonkimn.github.io/blob/master/data/NationalScholarship.pdf?raw=True">National STEM Scholarship (Full)</a> - KOSAF, 2020-2026
               </td>
             </tr>
-
             <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <span class="papertitle">Vision-Language-Action Policy Learning on ARNOLD Benchmark</span>
+              <td align="center" style="padding:16px;width:25%;vertical-align:middle">
+                <h3>Skills</h3>
+              </td>
+              <td style="padding:16px;width:75%;vertical-align:middle">
+                <strong>Languages:</strong> Python, C++, C, Shell
                 <br>
-                <em>CVPR 2025 ARNOLD Challenge, 1st Place</em>, Apr 2025 - May 2025
+                <strong>Tools:</strong> Isaac Sim, ROS2, Ubuntu
                 <br>
-                Fine-tuned Vision-Language-Action models for embodied manipulation on the ARNOLD benchmark. Improved robustness and generalization through targeted data augmentation, outperforming the PerAct baseline in continuous control tasks within Isaac Sim.
+                <strong>Robots:</strong> Franka, RX1, AI Worker, OMY
               </td>
             </tr>
-
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <span class="papertitle">Visual Guidance for Failure Modes in VLA Models</span>
-                <br>
-                <em>Research Project</em>, Oct 2025 - Present
-                <br>
-                Analyzing systematic failure modes of VLA models and proposing a visual guidance framework to enhance agent reasoning and control stability across long-horizon manipulation tasks.
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <span class="papertitle">Humanoid Mobile Manipulation System Design</span>
-                <br>
-                <em>Research Project</em>, Aug 2025 - Dec 2025
-                <br>
-                Designed and implemented a humanoid mobile manipulation system to study the full robotics lifecycle, from sim-to-real policy deployment to large-scale dataset generation and evaluation.
-              </td>
-            </tr>
-
-          </tbody></table>
-
-          <!-- Awards Section -->
-					<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Awards</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <a href="https://docs.google.com/viewer?url=https://github.com/dowonkimn/dowonkimn.github.io/blob/master/data/ArnoldCertification2025.pdf?raw=True">
-                  <span class="papertitle">1st Place at ARNOLD Challenge</span>
-                </a>
-                <br>
-                CVPR 2025 Embodied AI Workshop, Jul 2025
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <a href="https://docs.google.com/viewer?url=https://github.com/dowonkimn/dowonkimn.github.io/blob/master/data/GrandPrize.pdf?raw=True">
-                  <span class="papertitle">Grand Prize</span>
-                </a>
-                <br>
-                2025 Gyeonggi Youth Gap Year Program, Nov 2025
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <span class="papertitle">Outstanding Participant Award</span>
-                <br>
-                Reading Discussion Seminar, Soongsil Univ, Aug 2020
-              </td>
-            </tr>
-
-          </tbody></table>
-
-          <!-- Media Section -->
-					<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Media</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <a href="https://www.joongang.co.kr/article/25351676">
-                  <span class="papertitle">Soongsil Univ. 1st Place at CVPR '25 ARNOLD Challenge</span>
-                </a>
-                <br>
-                The JoongAng, Jul 2025
-              </td>
-            </tr>
-
-          </tbody></table>
-
-          <!-- Skills Section -->
-					<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Skills</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <strong>Languages:</strong> Python, C++, C, Linux Shell Script<br>
-                <strong>Tools:</strong> Isaac Sim, ROS2, Ubuntu<br>
-                <strong>Robot:</strong> Franka, RX1, AI worker, OMY
-              </td>
-            </tr>
-
           </tbody></table>
 
           <!-- Footer -->
