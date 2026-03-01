@@ -242,7 +242,38 @@
               </td>
             </tr>
 
-            <!-- 7. Skin Disease Paper -->
+            <!-- 7. One-Step Diffusion Anomaly Detection -->
+            <tr onmouseout="crab_stop()" onmouseover="crab_start()">
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='crab_image'>
+                    <img src='images/crabAfter.jpg' width=100%>
+                  </div>
+                  <img src='images/crabBefore.jpg' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function crab_start() {
+                    document.getElementById('crab_image').style.opacity = "1";
+                  }
+                  function crab_stop() {
+                    document.getElementById('crab_image').style.opacity = "0";
+                  }
+                  crab_stop()
+                </script>
+              </td>
+              <td style="padding:16px;width:75%;vertical-align:middle">
+                <a href="https://github.com/dowonology/2024IP_crab">
+                  <span class="papertitle">One-Step Diffusion-based Anomaly Detection</span>
+                </a>
+                <br>
+                <em>Project</em>, Mar 2024 - Jun 2024
+                <p>
+                  Developed a one-step denoising variant of DiffusionAD for real-time structural anomaly detection in biological products, enabling efficient inspection of irregular industrial defects.
+                </p>
+              </td>
+            </tr>
+
+            <!-- 8. Skin Disease Paper -->
             <tr onmouseout="skin_stop()" onmouseover="skin_start()">
               <td style="padding:16px;width:25%;vertical-align:middle">
                 <div class="one">
@@ -273,37 +304,6 @@
                 <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12434422">paper</a>
                 <p>
                   Web application for real-time skin disease classification using deep learning.
-                </p>
-              </td>
-            </tr>
-
-            <!-- 8. One-Step Diffusion Anomaly Detection -->
-            <tr onmouseout="crab_stop()" onmouseover="crab_start()">
-              <td style="padding:16px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='crab_image'>
-                    <img src='images/crabAfter.jpg' width=100%>
-                  </div>
-                  <img src='images/crabBefore.jpg' width=100%>
-                </div>
-                <script type="text/javascript">
-                  function crab_start() {
-                    document.getElementById('crab_image').style.opacity = "1";
-                  }
-                  function crab_stop() {
-                    document.getElementById('crab_image').style.opacity = "0";
-                  }
-                  crab_stop()
-                </script>
-              </td>
-              <td style="padding:16px;width:75%;vertical-align:middle">
-                <a href="https://github.com/dowonology/2024IP_crab">
-                  <span class="papertitle">One-Step Diffusion-based Anomaly Detection</span>
-                </a>
-                <br>
-                <em>Project</em>, Mar 2024 - Jun 2024
-                <p>
-                  Developed a one-step denoising variant of DiffusionAD for real-time structural anomaly detection in biological products, enabling efficient inspection of irregular industrial defects.
                 </p>
               </td>
             </tr>
