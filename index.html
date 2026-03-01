@@ -32,9 +32,9 @@
                   <a href="mailto:dowon.kimn@gmail.com">Email</a> &nbsp;/&nbsp;
                   <a href="https://dowonkimn.github.io/data/DowonKim-CV.pdf">CV</a> &nbsp;/&nbsp;
                   <a href="https://www.linkedin.com/in/dowon-kim-korea">LinkedIn</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/dowonkimn/">Github</a> &nbsp;/&nbsp;
-                  <a href="https://twitter.com/dowonkimn">Twitter</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=Mp4AWmIAAAAJ&hl">Scholar</a> 
+                  <a href="https://github.com/dowonkimn/">Github</a>
+                  <!-- <a href="https://twitter.com/dowonkimn">Twitter</a> &nbsp;/&nbsp; -->
+                  <!-- <a href="https://scholar.google.com/citations?user=Mp4AWmIAAAAJ&hl">Scholar</a>  -->
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
@@ -49,6 +49,7 @@
                 <h2>Research</h2>
                 <p>
                   My work focuses on enabling robots to learn manipulation skills through vision-language-action models and scalable sim-to-real pipelines.
+                  Recently, I have been exploring reinforcement learning for robot control.
                 </p>
               </td>
             </tr>
@@ -83,7 +84,13 @@
                 <br>
                 <em>CVPR 2025 Embodied AI Workshop</em> &nbsp <font color="red"><strong>(1st Place)</strong></font>
                 <br>
-                <a href="https://docs.google.com/viewer?url=https://github.com/dowonkimn/dowonkimn.github.io/blob/master/data/ArnoldCertification2025.pdf?raw=True">certificate</a>
+                <a href="data/ArnoldCertification2025.pdf">certificate</a>
+                /
+                <a href="https://eval.ai/web/challenges/challenge-page/2266/leaderboard/5611">leaderboard</a>
+                /
+                <a href="data/CVPR2025_arnold_challenge.pdf">slides</a>
+                /
+                <a href="https://youtu.be/WYkv1QCHVLs">video</a>
                 /
                 <a href="https://www.joongang.co.kr/article/25351676">media</a>
                 <p>
@@ -93,28 +100,16 @@
             </tr>
 
             <!-- 2. Sim-to-Real Pipeline -->
-            <tr onmouseout="simreal_stop()" onmouseover="simreal_start()">
+            <tr>
               <td style="padding:16px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='simreal_image'>
-                    <img src='images/simrealAfter.gif' width=100%>
-                  </div>
-                  <img src='images/simrealBefore.jpg' width=100%>
-                </div>
-                <script type="text/javascript">
-                  function simreal_start() {
-                    document.getElementById('simreal_image').style.opacity = "1";
-                  }
-                  function simreal_stop() {
-                    document.getElementById('simreal_image').style.opacity = "0";
-                  }
-                  simreal_stop()
-                </script>
+                <img src='images/LGAIResearch.jpg' width=100%>
               </td>
               <td style="padding:16px;width:75%;vertical-align:middle">
                 <span class="papertitle">Large-Scale Sim-to-Real Robotics Data Pipeline</span>
                 <br>
                 <em>LG AI Research</em>, 2026 - Present
+                <br>
+                <a href="data/LG_AI_Research_PT.pdf">slides</a>
                 <p>
                   Building an end-to-end R2S2R pipeline using NVIDIA Isaac Sim for scalable data generation, synthetic augmentation, and deployment validation.
                 </p>
@@ -156,31 +151,31 @@
               </td>
             </tr>
 
-            <!-- 4. VLA Failure Modes -->
-            <tr onmouseout="vlafail_stop()" onmouseover="vlafail_start()">
+            <!-- 4. VLA with Visual Guidance -->
+            <tr onmouseout="vla_stop()" onmouseover="vla_start()">
               <td style="padding:16px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='vlafail_image'>
-                    <img src='images/vlafailAfter.jpg' width=100%>
+                  <div class="two" id='vla_image'>
+                    <img src='images/vlaAfter.gif' width=100%>
                   </div>
-                  <img src='images/vlafailBefore.jpg' width=100%>
+                  <img src='images/vlaBefore.jpg' width=100%>
                 </div>
                 <script type="text/javascript">
-                  function vlafail_start() {
-                    document.getElementById('vlafail_image').style.opacity = "1";
+                  function vla_start() {
+                    document.getElementById('vla_image').style.opacity = "1";
                   }
-                  function vlafail_stop() {
-                    document.getElementById('vlafail_image').style.opacity = "0";
+                  function vla_stop() {
+                    document.getElementById('vla_image').style.opacity = "0";
                   }
-                  vlafail_stop()
+                  vla_stop()
                 </script>
               </td>
               <td style="padding:16px;width:75%;vertical-align:middle">
-                <span class="papertitle">Visual Guidance for Failure Modes in VLA Models</span>
+                <span class="papertitle">Visual Guidance for Improved VLA Actions</span>
                 <br>
                 <em>In Progress</em>, 2025 - Present
                 <p>
-                  Analyzing systematic failure modes of VLA models and proposing visual guidance to enhance reasoning across long-horizon manipulation tasks.
+                  Investigating VLA models guided by visual cues derived from failure cases on the ARNOLD benchmark to achieve better manipulation actions.
                 </p>
               </td>
             </tr>
@@ -249,6 +244,68 @@
               </td>
             </tr>
 
+            <!-- 7. One-Step Diffusion Anomaly Detection -->
+            <tr onmouseout="crab_stop()" onmouseover="crab_start()">
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='crab_image'>
+                    <img src='images/crabAfter.jpg' width=100%>
+                  </div>
+                  <img src='images/crabBefore.jpg' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function crab_start() {
+                    document.getElementById('crab_image').style.opacity = "1";
+                  }
+                  function crab_stop() {
+                    document.getElementById('crab_image').style.opacity = "0";
+                  }
+                  crab_stop()
+                </script>
+              </td>
+              <td style="padding:16px;width:75%;vertical-align:middle">
+                <a href="https://github.com/dowonology/2024IP_crab">
+                  <span class="papertitle">One-Step Diffusion-based Anomaly Detection</span>
+                </a>
+                <br>
+                <em>Project</em>, Mar 2024 - Jun 2024
+                <p>
+                  Developed a one-step denoising variant of DiffusionAD for real-time structural anomaly detection in biological products, enabling efficient inspection of irregular industrial defects.
+                </p>
+              </td>
+            </tr>
+
+            <!-- 8. ToddlerBot Reproduce -->
+            <tr onmouseout="toddlerbot_stop()" onmouseover="toddlerbot_start()">
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='toddlerbot_image'>
+                    <img src='images/toddlerbotAfter.gif' width=100%>
+                  </div>
+                  <img src='images/toddlerbotBefore.jpg' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function toddlerbot_start() {
+                    document.getElementById('toddlerbot_image').style.opacity = "1";
+                  }
+                  function toddlerbot_stop() {
+                    document.getElementById('toddlerbot_image').style.opacity = "0";
+                  }
+                  toddlerbot_stop()
+                </script>
+              </td>
+              <td style="padding:16px;width:75%;vertical-align:middle">
+                <span class="papertitle">ToddlerBot Open-Source Robot Reproduction</span>
+                <br>
+                <em>Gyeonggi Gap Year Project</em>, 2025 &nbsp <font color="red"><strong>(Grand Prize)</strong></font>
+                <br>
+                <a href="data/Gapyear_PT.pdf">slides</a>
+                <p>
+                  Reproduced Stanford's ToddlerBot open-source robot from parts procurement to assembly, MuJoCo simulation setup and training.
+                </p>
+              </td>
+            </tr>
+
           </tbody></table>
 
           <!-- Miscellanea Section -->
@@ -266,11 +323,11 @@
                 <h3>Awards</h3>
               </td>
               <td style="padding:16px;width:75%;vertical-align:middle">
-                <a href="https://docs.google.com/viewer?url=https://github.com/dowonkimn/dowonkimn.github.io/blob/master/data/ArnoldCertification2025.pdf?raw=True">1st Place, ARNOLD Challenge</a> - CVPR 2025 Embodied AI Workshop
+                <a href="data/ArnoldCertification2025.pdf">1st Place, ARNOLD Challenge</a> - CVPR 2025 Embodied AI Workshop
                 <br>
-                <a href="https://docs.google.com/viewer?url=https://github.com/dowonkimn/dowonkimn.github.io/blob/master/data/GrandPrize.pdf?raw=True">Grand Prize</a> - Gyeonggi Youth Gap Year Program, 2025
+                <a href="data/GrandPrize.pdf">Grand Prize</a> - Gyeonggi Youth Gap Year Program, 2025
                 <br>
-                <a href="https://docs.google.com/viewer?url=https://github.com/dowonkimn/dowonkimn.github.io/blob/master/data/NationalScholarship.pdf?raw=True">National STEM Scholarship (Full)</a> - KOSAF, 2020-2026
+                <a href="data/NationalScholarship.pdf">National STEM Scholarship (Full)</a> - KOSAF, 2020-2026
               </td>
             </tr>
             <tr>
